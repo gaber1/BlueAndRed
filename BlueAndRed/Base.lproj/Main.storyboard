@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BlueAndRed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWV-ge-ogD">
+                                <rect key="frame" x="20" y="553" width="150" height="50"/>
+                                <state key="normal" title="Hide Red">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hide_red:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8k-rV-aKZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5N-ez-VU7">
+                                <rect key="frame" x="205" y="553" width="150" height="50"/>
+                                <state key="normal" title="Hide Blue"/>
+                                <connections>
+                                    <action selector="hide_blue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xK0-hh-iXz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="picasso_red" translatesAutoresizingMaskIntoConstraints="NO" id="bqs-vg-UAe">
+                                <rect key="frame" x="20" y="43" width="150" height="240"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="picasso_blue" translatesAutoresizingMaskIntoConstraints="NO" id="YcJ-n0-Dx4">
+                                <rect key="frame" x="205" y="43" width="150" height="240"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_picasso_museum" translatesAutoresizingMaskIntoConstraints="NO" id="BQc-8i-pRT">
+                                <rect key="frame" x="-45" y="298" width="441" height="247"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Hide_Blue" destination="J5N-ez-VU7" id="Ib1-HE-wm1"/>
+                        <outlet property="Hide_Red" destination="gWV-ge-ogD" id="v8c-aS-4iO"/>
+                        <outlet property="bg_picasso_museum" destination="BQc-8i-pRT" id="rIY-nb-zVr"/>
+                        <outlet property="picasso_blue" destination="YcJ-n0-Dx4" id="1Fi-rN-DeQ"/>
+                        <outlet property="picasso_red" destination="bqs-vg-UAe" id="tHn-HX-c7L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266.5" y="-63.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_picasso_museum" width="604" height="340"/>
+        <image name="picasso_blue" width="907" height="1088"/>
+        <image name="picasso_red" width="236" height="282"/>
+    </resources>
+</document>
